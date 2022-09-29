@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/serviceMqtt.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d7fd953ede72667dec4b2b3007608609/transformed/serviceMqtt/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7fd953ede72667dec4b2b3007608609/transformed/serviceMqtt/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d7fd953ede72667dec4b2b3007608609/transformed/serviceMqtt/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
