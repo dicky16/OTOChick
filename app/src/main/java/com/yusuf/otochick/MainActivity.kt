@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContentProviderCompat.requireContext
 import id.myeco.myeco.utils.helper.MQTTClient
@@ -34,20 +35,20 @@ class MainActivity : AppCompatActivity() {
     private var topicHum7              = ""
 
     //view id
-    private lateinit var tvTemp1:EditText
-    private lateinit var tvHum1 :EditText
-    private lateinit var tvTemp2:EditText
-    private lateinit var tvHum2 :EditText
-    private lateinit var tvTemp3:EditText
-    private lateinit var tvHum3 :EditText
-    private lateinit var tvTemp4:EditText
-    private lateinit var tvHum4 :EditText
-    private lateinit var tvTemp5:EditText
-    private lateinit var tvHum5 :EditText
-    private lateinit var tvTemp6:EditText
-    private lateinit var tvHum6 :EditText
-    private lateinit var tvTemp7:EditText
-    private lateinit var tvHum7 :EditText
+    private lateinit var tvTemp1:TextView
+    private lateinit var tvHum1 :TextView
+    private lateinit var tvTemp2:TextView
+    private lateinit var tvHum2 :TextView
+    private lateinit var tvTemp3:TextView
+    private lateinit var tvHum3 :TextView
+    private lateinit var tvTemp4:TextView
+    private lateinit var tvHum4 :TextView
+    private lateinit var tvTemp5:TextView
+    private lateinit var tvHum5 :TextView
+    private lateinit var tvTemp6:TextView
+    private lateinit var tvHum6 :TextView
+    private lateinit var tvTemp7:TextView
+    private lateinit var tvHum7 :TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,43 +62,43 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViewId() {
-        tvTemp1 = findViewById(R.id.tvTemp1)
-        tvHum1  = findViewById(R.id.tvHum1)
-        tvTemp2 = findViewById(R.id.tvTemp2)
-        tvHum2  = findViewById(R.id.tvHum2)
-        tvTemp3 = findViewById(R.id.tvTemp3)
-        tvHum3  = findViewById(R.id.tvHum3)
-        tvTemp4 = findViewById(R.id.tvTemp4)
-        tvHum4  = findViewById(R.id.tvHum4)
-        tvTemp5 = findViewById(R.id.tvTemp5)
-        tvHum5  = findViewById(R.id.tvHum5)
-        tvTemp6 = findViewById(R.id.tvTemp6)
-        tvHum6  = findViewById(R.id.tvHum6)
-        tvTemp7 = findViewById(R.id.tvTemp7)
-        tvHum7  = findViewById(R.id.tvHum7)
+        tvTemp1 = findViewById(R.id.tvTemp0)
+        tvHum1  = findViewById(R.id.tvHum0)
+        tvTemp2 = findViewById(R.id.tvTemp1)
+        tvHum2  = findViewById(R.id.tvHum1)
+        tvTemp3 = findViewById(R.id.tvTemp2)
+        tvHum3  = findViewById(R.id.tvHum2)
+        tvTemp4 = findViewById(R.id.tvTemp3)
+        tvHum4  = findViewById(R.id.tvHum3)
+        tvTemp5 = findViewById(R.id.tvTemp4)
+        tvHum5  = findViewById(R.id.tvHum4)
+        tvTemp6 = findViewById(R.id.tvTemp5)
+        tvHum6  = findViewById(R.id.tvHum5)
+        tvTemp7 = findViewById(R.id.tvTemp6)
+        tvHum7  = findViewById(R.id.tvHum6)
     }
 
     private fun initTopic() {
-        topicTemp1 = topicTemp.replace("{device_id}", "1")
-        topicHum1  = topicHum.replace("{device_id}", "1")
-        topicTemp2 = topicTemp.replace("{device_id}", "2")
-        topicHum2  = topicHum.replace("{device_id}", "2")
-        topicTemp3 = topicTemp.replace("{device_id}", "3")
-        topicHum3  = topicHum.replace("{device_id}", "3")
-        topicTemp4 = topicTemp.replace("{device_id}", "4")
-        topicHum4  = topicHum.replace("{device_id}", "4")
-        topicTemp5 = topicTemp.replace("{device_id}", "5")
-        topicHum5  = topicHum.replace("{device_id}", "5")
-        topicTemp6 = topicTemp.replace("{device_id}", "6")
-        topicHum6  = topicHum.replace("{device_id}", "6")
-        topicTemp7 = topicTemp.replace("{device_id}", "7")
-        topicHum7  = topicHum.replace("{device_id}", "7")
+        topicTemp1 = topicTemp.replace("{device_id}", "0")
+        topicHum1  = topicHum.replace("{device_id}", "0")
+        topicTemp2 = topicTemp.replace("{device_id}", "1")
+        topicHum2  = topicHum.replace("{device_id}", "1")
+        topicTemp3 = topicTemp.replace("{device_id}", "2")
+        topicHum3  = topicHum.replace("{device_id}", "2")
+        topicTemp4 = topicTemp.replace("{device_id}", "3")
+        topicHum4  = topicHum.replace("{device_id}", "3")
+        topicTemp5 = topicTemp.replace("{device_id}", "4")
+        topicHum5  = topicHum.replace("{device_id}", "4")
+        topicTemp6 = topicTemp.replace("{device_id}", "5")
+        topicHum6  = topicHum.replace("{device_id}", "5")
+        topicTemp7 = topicTemp.replace("{device_id}", "6")
+        topicHum7  = topicHum.replace("{device_id}", "6")
     }
 
     private fun connetMqtt() {
-        if(mqttClient == null) mqttClient = MQTTClient(this, "tcp://devmyeco.my.id:1883", UUID.randomUUID().toString())
+        if(mqttClient == null) mqttClient = MQTTClient(this, "tcp://devmyeco.my.id:1884", UUID.randomUUID().toString())
         if(mqttClient?.isConnect() == false) {
-            mqttClient?.connect("myeco1234", "devmyeco123",
+            mqttClient?.connect("client", "client",
                 object : IMqttActionListener {
                     override fun onSuccess(asyncActionToken: IMqttToken?) {
                         Timber.e("connected")

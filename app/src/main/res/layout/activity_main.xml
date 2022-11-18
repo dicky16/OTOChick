@@ -75,8 +75,8 @@
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
-                        <EditText
-                            android:id="@+id/tvTemp1"
+                        <TextView
+                            android:id="@+id/tvTemp0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -90,8 +90,8 @@
                             android:textSize="10sp"
                             android:textStyle="bold" />
 
-                        <EditText
-                            android:id="@+id/tvHum1"
+                        <TextView
+                            android:id="@+id/tvHum0"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -141,13 +141,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 1"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvTemp2"
+                            <TextView
+                                android:id="@+id/tvTemp1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -161,8 +161,8 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvHum2"
+                            <TextView
+                                android:id="@+id/tvHum1"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -204,13 +204,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 2"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvTemp5"
+                            <TextView
+                                android:id="@+id/tvTemp2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -224,8 +224,8 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvHum5"
+                            <TextView
+                                android:id="@+id/tvHum2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -276,12 +276,12 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 3"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/tvTemp3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -296,7 +296,7 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
+                            <TextView
                                 android:id="@+id/tvHum3"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -339,13 +339,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 4"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvTemp6"
+                            <TextView
+                                android:id="@+id/tvTemp4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -359,8 +359,8 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvHum6"
+                            <TextView
+                                android:id="@+id/tvHum4"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -412,13 +412,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 5"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvTemp4"
+                            <TextView
+                                android:id="@+id/tvTemp5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -432,8 +432,8 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvHum4"
+                            <TextView
+                                android:id="@+id/tvHum5"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -475,13 +475,13 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="6dp"
-                                android:text="master"
+                                android:text="Sensor 6"
                                 android:textColor="@android:color/holo_orange_dark"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvTemp7"
+                            <TextView
+                                android:id="@+id/tvTemp6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
@@ -495,8 +495,8 @@
                                 android:textSize="10sp"
                                 android:textStyle="bold" />
 
-                            <EditText
-                                android:id="@+id/tvHum7"
+                            <TextView
+                                android:id="@+id/tvHum6"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="10dp"
